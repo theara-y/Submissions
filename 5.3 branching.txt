@@ -1,0 +1,20 @@
+Theara Ya
+Branching Exercises
+September 1, 2023
+
+Part I 
+1. What Git command creates a branch?
+'git branch <new branch name>' and 'git checkout -b <new branch name>' will both create a new branch. The latter will move the current working directory onto the new branch.
+
+2. What is the difference between a fast-forward and recursive merge?
+A fast-forward merge is when the branch being merged into has not evolved or changed since the merging branch has been created. Since there have been no changes, the branch to be merged into only needs to update its HEAD to match the HEAD of the branch being merged from. This is a simple two-way merge where only the source and destination changesets need to be compared to produce the merged result.
+A recursive merge uses a three-way merge algorithm. In a three-way merge algorithm, the source and destination changesets are each compared to an additional third factor called the ancestor. The ancestor is the closest common parent changeset of the source and destination changesets. A recursive merge is applied in the case that two ancestors are found instead of one. This could occur due to long lived branches or scenarios with complex branch topologies. A recursive merge will create a new virtual ancestor by merging the two ancestors. The virtual ancestor is then used in the three-way merge algorithm with the source and destination changesets. This produces a much better result that reduces mistakes and errors by accounting for changes in both ancestors.
+
+3. What Git command changes to another branch?
+'git checkout <branch to change to>' will change the current working directory to a given branch.
+
+4. What Git command deletes a branch?
+'git branch -d <branch to be deleted>' will delete a given branch. The command must be executed from a branch other than the one that is being deleted.
+
+5. How do merge conflicts happen? 
+A merge conflict happens when merging branches that have competing commits and Git cannot determine which changes to keep in the final result. Competing commits could be different changes to the same line and same file, or a file being deleted in one commit and edited in another. 

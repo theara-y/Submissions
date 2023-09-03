@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 25px;
+}
+
+form input {
+    font-size: 16pt;
+}
+
+form button {
+    padding: 5px 10px 5px 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+li {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+li button {
+    margin-right: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.cross-out {
+    text-decoration: line-through;
+}

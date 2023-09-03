@@ -1,0 +1,55 @@
+Theara Ya
+Terminal Exercises
+September 1, 2023
+
+Part I
+1. make a directory called first
+  mkdir first
+2. change directory to the first folder
+  cd first
+3. create a file called person.txt
+  touch person.txt
+4. change the name of person.txt to another.txt
+  mv person.txt another.txt
+5. make a copy of the another.txt file and call it copy.txt
+  cp another.txt copy.txt
+6. remove the copy.txt file
+  rm copy.txt
+7. make a copy of the first folder and call it second
+  cp -r first second
+8. delete the second folder
+  rm -rf second
+
+Part II
+1. What does the man command do? Type in man rm. How do you scroll and get out?
+man is the system's manual pager. Each page argument given to man is normally the name of a program, utility, or function. The manual page associated with each of these arguments is then found and displayed. A manual page consists of several sections that includes the synopsis, options, return values, examples, and other information. There can be several pages. In other words, it is the documentation or help manual that users can reference to learn more about a given argument and often used to look up what a command does, how to use it, and what flags can be set.There are several ways to navigate the manual pages. To scroll, you may use the up and down arrow keys, space bar, enter key, pgup and pgdn keys, scroll wheel, or inputting man <command>.<page #> to view a particular page. To exit out of the manual pager, press 'q' on your keyboard to quit.
+
+2. Look at the man page for ls. What does the -l flag do? What does the -a flag do?
+ls is used to list a directory's content including its files and folders. The -a option is short for --all, and as result will list all files and folders including hidden items that are prepended by a period. The -l option when supplied will list the contents of a directory using the long listing format. The long listing format prints for each item in the following order: permmisions, number of linked hard links, owner of the file, the file's group, size, modification/creation timestamp, and finally the file/directory's name. The first character signifies the item's type. Some common uses are "-" for a regular file, "l" for a symbolic link, "d" for a directory", and "c" for a character file.
+
+3. How do you jump between words in the terminal?
+To jump between words in a terminal input on a Windows computer, press the left and right arrow keys while holding down Ctrl. The equivalent of Ctrl on a Mac is Command.
+
+4. How do you get to the end of a line in terminal?
+To reach the end of a line in the terminal, press Ctrl + e.
+
+5. How do you move your cursor to the beginning in terminal?
+To reach the beginning of a line in the terminal, press Ctrl + a.
+
+6. How do you delete a word (without pressing backspace multiple times) in terminal?
+To delete a word on a line, first move the cursor to the end of the word to delete and press Ctrl + w to delete.
+
+7. What is the difference between a terminal and shell?
+The shell is command-line interpreter that processes the command. The terminal is the interface for interacting with the shell.
+
+8. What is an absolute path?
+An absolute path starts from the root directory(/) and traverses through the file system to the location of the target file or directory.
+
+9. What is an relative path?
+A relative path starts from the current working directory and traverses through the file system to the location of the target file or directory.
+
+10. What is a flag? Give three examples of flags you have used.
+Flags are additional options that can be supplied to commands modifying the command's behavior. For example, ls -a will list all files including hidden items instead of just listing the visible ones. rm -f will forcibly delete a file instead of prompting the user before deletion if there is a warning. And any <command> --version will display the command's version instead of executing its function.
+
+11. What do the r and f flags do with the rm command?
+-r will cause the rm command to recursively delete files. -f will cause the rm command to delete files while never prompting the user for a warning. Together, rm -rf <directory> will delete all file and folders contained within <directory> as well as the <directory> itself. 
