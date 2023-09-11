@@ -1,0 +1,31 @@
+Theara Ya
+September 10, 2023
+let and const Exercise
+
+
+ES5 Global Constants
+====================
+var PI = 3.14;
+PI = 42; // stop me from doing this!
+
+ES2015 Global Constants
+=======================
+const PI = 3.14;
+
+
+Quiz
+====
+What is the difference between var and let?
+var is redeclarable, reassignable, is hoisted, and scopes to the function.
+let is reassignable, but not redeclarable, not hoisted, and scopes to the block.
+
+What is the difference between var and const?
+var is redeclarable, reassignable, is hoisted, and scopes to the function.
+const is not redeclarable, not reassignable, not hoisted, and scopes to the block.
+
+What is the difference between let and const?
+let is reassignable, not redeclarable, not hoisted, and scopes to the block.
+const is not reassignable, not redeclarable, not hoisted, and scopes to the block.
+
+What is hoisting?
+Hoisting occurs when var is used and functions are declared. Their declaration are lifted to the top of the scope where they are initialized to undefined. This allowed the ability to group and reorganize var and function declaration to the developer's liking.
